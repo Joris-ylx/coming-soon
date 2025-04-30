@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: white;
-            font-size: 50px;
-            font-family: Arial, sans-serif;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Groom Titan – Coming Soon</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .coming-soon-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 48px;
+      font-family: Arial, sans-serif;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      .coming-soon-text {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
 <body>
-    COMING SOON
+  <div class="image-container">
+    <img src="your-image.png" alt="Groom Titan">
+    <div class="coming-soon-text">COMING SOON</div>
+  </div>
 </body>
 </html>
